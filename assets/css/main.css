@@ -1,0 +1,198 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  vertical-align: baseline; 
+
+}
+
+
+
+ /* --- 1: BANNER --- */
+
+/* ##### ANIMATIONS ##### */
+
+@keyframes blurin-intro {
+  from { filter: blur(12.5px); }
+  to   { filter: blur(0px); }
+}
+
+#banner-section {
+
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.logo {
+
+  max-width: 100%;
+
+}
+
+ /* --- 2: GAMEPLAY --- */
+
+ #gameplay-section {
+
+  width: 100vw;
+  height: 150vh;
+
+}
+
+.gameplay {
+
+  width: 100%;
+  overflow: visible;
+}
+
+.gameplay img {
+  
+  width: 100%;
+  max-width: 720px;
+  position: relative; /* or absolute */
+
+}
+
+.shadow-smear {
+
+  box-shadow: -5px 8px 50px 10px #555;
+
+}
+
+.tilt-left {
+
+  transform: rotate(-2deg);
+
+}
+
+.tilt-right {
+
+  transform: rotate(2deg);
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+  .tilt-right {
+
+    transform: rotate(0deg);
+  
+  }
+
+  .tilt-left {
+
+    transform: rotate(0deg);
+  
+  }
+
+  .shadow-smear {
+
+    box-shadow: 0px 0px 0px 0px;
+  
+  }
+  
+
+}
+
+.description {
+
+  text-align: left;
+  width: 40%;
+
+}
+
+span > .space-1{
+
+  width: 3%;
+  height: 3%;
+
+}
+
+ /* --- 99: DASE --- */
+
+/* --- 3: LINKS --- */
+
+
+#links-section {
+
+  width: 100vw;
+  height: 25vh;
+
+}
+
+.icon {
+  transition: transform .2s; 
+}
+.icon:hover {
+  transform: rotate(-5deg) scale(1.2);
+}
+
+/* --- FLEX LAYOUT --- */
+
+.flex-center {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.flex-updown {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ /* --- TEXT --- */
+
+h1 {
+   text-align: left;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+h2 {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: none;
+}
+
+ /* --- GENERAL --- */
+
+html body {
+  
+  overflow: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+}
+::-webkit-scrollbar {
+  width: 0px; 
+  background: transparent;
+}

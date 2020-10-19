@@ -39,14 +39,16 @@ section, summary, time, mark, audio, video {
 
 .logo {
 
-  max-width: 100%;
+  max-width: 50%;
 
-}
+} @media screen and (max-width: 1080px) {
 
- /* --- 2: GAMEPLAY --- */
+  .logo {
 
-@media screen and (max-width: 1100px) {
-
+    max-width: 95%;
+    padding-bottom: 100px;
+  
+  }
 
 }
 
@@ -134,6 +136,36 @@ p {
 
 }
 
+a:link, a:visited {
+
+  text-decoration: none;
+
+}
+
+a {
+
+    color: black;
+
+}
+
+.handwriting {
+
+  font-family: 'Gochi Hand', cursive;
+
+}
+
+.black {
+
+  color: black;
+
+}
+
+.white {
+
+  color: white;
+
+}
+
  /* --- GENERAL --- */
 
 html body {
@@ -170,9 +202,39 @@ html body {
 
 }
 
+.border {
+
+  border: 5px solid black;
+  padding: 5px 50px;
+  text-overflow: clip;
+
+}
+
 span > .space-1{
 
   width: 3%;
   height: 3%;
 
 }
+
+ /* --- EFFECTS --- overflow: visible; */ 
+
+ .no-copy {
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+
+}
+
+.all-copy {  
+
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all; 
+
+}
+
+/*btn_background*/
